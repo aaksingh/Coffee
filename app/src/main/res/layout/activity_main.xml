@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ne.coffee.MainActivity"
+    android:paddingLeft="10sp">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Quantity"
+    android:textSize="30dp"
+    android:fontFamily="sans-serif-light"
+    android:paddingBottom="16sp"/>
+   <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="+"
+           android:id="@+id/plus"
+           android:onClick="plus"
+           android:textSize="30dp"/>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0"
+    android:textSize="30dp"
+    android:id="@+id/quantity"
+    android:fontFamily="sans-serif-light"
+   android:paddingBottom="16sp"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="-"
+           android:id="@+id/minus"
+           android:onClick="minus"
+           android:textSize="30dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="30dp"
+
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="16sp"/>
+         android:paddingBottom="16sp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:₹0"
+        android:textSize="30dp"
+        android:id="@+id/price_text_view"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="16sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:id="@+id/order"
+        android:onClick="order"
+        android:fontFamily="sans-serif-light"
+        android:textSize="20dp"/>
+</LinearLayout>
